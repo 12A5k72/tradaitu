@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <!-- Head: Phần đầu, chứa tiêu đề và link style/JS. Không cần thay đổi trừ khi thêm thư viện mới. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Làm web responsive cho mobile. -->
+  <title>Liên Hệ - Trà Đại Từ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap cho grid và carousel. -->
+  <link href="css/styles.css" rel="stylesheet"> <!-- Link CSS tùy chỉnh. -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!-- Font từ Google. -->
+</head>
+<body>
+<!-- Navbar: Thanh menu chung cho tất cả trang. Để thêm trang mới, thêm <li> vào <ul> dưới đây. -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top"> <!-- Sticky-top: Menu dính trên khi scroll. -->
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Trà Đại Từ</a> <!-- Tên thương hiệu, thay văn bản để đổi tên. -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span> <!-- Nút menu cho mobile. -->
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto"> <!-- Danh sách menu, thêm <li> để thêm mục mới. -->
+        <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+        <li class="nav-item"><a class="nav-link" href="gioithieu.html">Giới Thiệu</a></li>
+        <li class="nav-item"><a class="nav-link" href="tinhhoatraviet.html">Tinh Hoa Trà Việt</a></li>
+        <li class="nav-item"><a class="nav-link" href="vanhoathuongtra.html">Văn Hóa Thưởng Trà</a></li>
+        <li class="nav-item"><a class="nav-link" href="sanphamnoibat.html">Sản Phẩm</a></li>
+        <li class="nav-item"><a class="nav-link" href="dulichvatrainghiem.html">Du Lịch</a></li>
+        <li class="nav-item"><a class="nav-link" href="thuvienmedia.html">Media</a></li>
+        <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên Hệ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Section chính: Nội dung trang. Để thêm trường form, copy <div class="mb-3"> <label ...> <input ...> </div>. -->
+<section class="container section fade-in"> <!-- Class fade-in cho animation. -->
+  <h1 class="text-center">Liên Hệ</h1> <!-- Tiêu đề trang, thay văn bản. -->
+  <!-- Form: Biểu mẫu liên hệ. JS xử lý submit ở script.js. -->
+  <form class="mt-4"> <!-- Form chính. -->
+    <div class="mb-3"> <!-- Trường tên. -->
+      <label for="name" class="form-label">Tên</label> <!-- Nhãn. -->
+      <input type="text" class="form-control" id="name" required> <!-- Ô nhập, thay type="email" cho email mới. -->
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Tin Nhắn</label>
+      <textarea class="form-control" id="message" rows="5" required></textarea> <!-- Ô văn bản lớn. -->
+    </div> <!-- Để thêm trường mới: Copy <div class="mb-3"> ... </div> và paste ở đây, thay id/label. -->
+    <button type="submit" class="btn btn-primary">Gửi</button> <!-- Nút gửi. -->
+  </form>
+</section>
+
+<!-- Footer: Phần chân trang chung. Thay <p> để chỉnh bản quyền. -->
+<footer class="text-center">
+  <p>&copy; 2025 Không Gian Văn Hóa Trà Đại Từ.</p> <!-- Thay năm hoặc văn bản. -->
+</footer>
+
+<!-- Script: Link JS. Không cần thay đổi. -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

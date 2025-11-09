@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <!-- Head: Phần đầu, chứa tiêu đề và link style/JS. Không cần thay đổi trừ khi thêm thư viện mới. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Làm web responsive cho mobile. -->
+  <title>Không Gian Văn Hóa Trà Đại Từ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap cho grid và carousel. -->
+  <link href="css/styles.css" rel="stylesheet"> <!-- Link CSS tùy chỉnh. -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!-- Font từ Google. -->
+</head>
+<body>
+<!-- Navbar: Thanh menu chung cho tất cả trang. Để thêm trang mới, thêm <li> vào <ul> dưới đây. -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top"> <!-- Sticky-top: Menu dính trên khi scroll. -->
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Trà Đại Từ</a> <!-- Tên thương hiệu, thay văn bản để đổi tên. -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span> <!-- Nút menu cho mobile. -->
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto"> <!-- Danh sách menu, thêm <li> để thêm mục mới. -->
+        <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+        <li class="nav-item"><a class="nav-link" href="gioithieu.html">Giới Thiệu</a></li>
+        <li class="nav-item"><a class="nav-link" href="tinhhoatraviet.html">Tinh Hoa Trà Việt</a></li>
+        <li class="nav-item"><a class="nav-link" href="vanhoathuongtra.html">Văn Hóa Thưởng Trà</a></li>
+        <li class="nav-item"><a class="nav-link" href="sanphamnoibat.html">Sản Phẩm</a></li>
+        <li class="nav-item"><a class="nav-link" href="dulichvatrainghiem.html">Du Lịch</a></li>
+        <li class="nav-item"><a class="nav-link" href="thuvienmedia.html">Media</a></li>
+        <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên Hệ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section: Phần đầu trang với hình nền và lời chào. Thay background trong CSS để đổi ảnh. -->
+<div class="hero d-flex align-items-center justify-content-center text-center">
+  <div>
+    <h1>Khám Phá Không Gian Văn Hóa Trà Đại Từ</h1> <!-- Tiêu đề chính, thay văn bản để chỉnh. -->
+    <p>Huyện Đại Từ, Tỉnh Thái Nguyên - Nơi tinh hoa trà Việt hội tụ</p> <!-- Mô tả ngắn, thay để chỉnh nội dung. -->
+    <a href="gioithieu.html" class="btn btn-light">Tìm Hiểu Thêm</a> <!-- Nút kêu gọi hành động, thay href để link khác. -->
+  </div>
+</div>
+
+<!-- Nội Dung Chính: Section giới thiệu. Để thêm nội dung, copy <div class="col-md-6"> và paste vào <div class="row">. -->
+<section class="container section fade-in"> <!-- Class fade-in cho animation. -->
+  <div class="row"> <!-- Row: Hàng chia cột. -->
+    <div class="col-md-6"> <!-- Cột 1: Nội dung văn bản. Thay <p> để chỉnh bài viết. -->
+      <h2>Chào Mừng Đến Với Trà Đại Từ</h2>
+      <p>Trà Đại Từ là biểu tượng văn hóa với lịch sử hàng trăm năm, đồi chè bát ngát và sản phẩm chất lượng cao.</p> <!-- Thay nội dung ở đây. -->
+    </div>
+    <div class="col-md-6"> <!-- Cột 2: Carousel hình ảnh. Để thêm ảnh, thêm <div class="carousel-item"> mới. -->
+      <div id="carouselHome" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://moitruongxaydungvn.vn/uploads/images/2023/Quy%201-2024/1-z5493086425394_25795208f3d6f3ac42cdfe024b899a19.jpg" class="d-block w-100" alt="Đồi chè"> <!-- Ảnh 1, thay src để đổi. -->
+          </div>
+          <div class="carousel-item">
+            <img src="https://baothainguyen.vn/file/e7837c027f6ecd14017ffa4e5f2a0e34/022025/hoang_nong_20250217103345.jpg" class="d-block w-100" alt="Cảnh quan trà"> <!-- Ảnh 2, thay src. -->
+          </div> <!-- Để thêm ảnh mới: Copy khối <div class="carousel-item"> <img ...> </div> và paste ở đây. -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button> <!-- Nút trước. -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button> <!-- Nút sau. -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer: Phần chân trang chung. Thay <p> để chỉnh bản quyền. -->
+<footer class="text-center">
+  <p>&copy; 2025 Không Gian Văn Hóa Trà Đại Từ.</p> <!-- Thay năm hoặc văn bản. -->
+</footer>
+
+<!-- Script: Link JS. Không cần thay đổi. -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
